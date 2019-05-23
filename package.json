@@ -1,0 +1,22 @@
+{
+  "name": "youtubeclone",
+  "version": "1.0.0",
+  "description": "youtube cloning using node.js and vanilla.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoneHyeon/youtubeClone.git"
+  },
+  "author": "SeokHyeon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StoneHyeon/youtubeClone/issues"
+  },
+  "homepage": "https://github.com/StoneHyeon/youtubeClone#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
