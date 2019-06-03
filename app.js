@@ -3,6 +3,9 @@ import morgan from "morgan";
 import helmet from "helmet";
 import cookieParser from "cookie-parser";
 import bodyParser from "body-parser";
+import {
+    localsMiddleWare
+} from "./middlewares";
 import userRouter from "./routers/userRouter";
 import videoRouter from "./routers/videoRouter";
 import globalRouter from "./routers/globalRouter";
@@ -18,6 +21,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 app.use(helmet());
 app.use(morgan("dev"));
+app.use(localsMiddleWare);
 
 app.use(routes.home, globalRouter);
 app.use(routes.users, userRouter);

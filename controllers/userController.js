@@ -1,7 +1,64 @@
-export const join = (req, res) => res.render("join");
-export const login = (req, res) => res.render("login");
-export const logout = (req, res) => res.render("logout");
-export const users = (req, res) => res.render("users");
-export const user_detail = (req, res) => res.render("user_detail");
-export const edit_profile = (req, res) => res.render("edit_profile");
-export const change_password = (req, res) => res.render("change_password");
+import routes from "../routes";
+
+export const getJoin = (req, res) => {
+
+    res.render("join", {
+        pageTitle: "Join"
+    })
+};
+
+export const postJoin = (req, res) => {
+    const {
+        body: {
+            name,
+            email,
+            password,
+            password2
+        }
+    } = req;
+    if (password !== password2) {
+        res.status(400);
+    } else {
+        //할 일 : 사용자 등록
+        //할 일 : 사용자 로그인
+        res.redirect(routes.home);
+    }
+    res.render("join", {
+        pageTitle: "Join"
+    })
+}
+
+
+export const getLogin = (req, res) => {
+    res.render("login", {
+        pageTitle: "Log In"
+    })
+};
+
+export const postLogin = (req, res) => {
+    /*const {
+        body:{email, password}
+    } = req;*/
+    res.redirect(routes.home);
+}
+
+export const logout = (req, res) => {
+    //할 일: 로그아웃 처리
+    res.redirect(routes.home);
+};
+
+export const users = (req, res) => res.render("users", {
+    pageTitle: "Users"
+});
+
+export const editProfile = (req, res) => res.render("editProfile", {
+    pageTitle: "Edit Profile"
+});
+
+export const userDetail = (req, res) => res.render("userDetail", {
+    pageTitle: "User Detail"
+});
+
+export const changePassword = (req, res) => res.render("changePassword", {
+    pageTitle: "Change Password"
+});
