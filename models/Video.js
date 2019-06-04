@@ -1,7 +1,5 @@
 import mongoose from "mongoose";
-import {
-    stringify
-} from "querystring";
+
 
 const VideoSchema = new mongoose.Schema({
     fileUrl: {
