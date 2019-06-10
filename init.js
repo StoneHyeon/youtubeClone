@@ -1,15 +1,15 @@
 import dotenv from "dotenv";
 import "./db";
+import app from "./app";
 import "./models/Video";
 import "./models/Comment";
 import "./models/User";
-import app from "./app";
-
 
 dotenv.config();
 
 
-const PORT = process.env.PORT || 6000;
+
+const PORT = process.env.PORT || 7000;
 
 
 const handleListening = () => {
