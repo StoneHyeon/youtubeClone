@@ -9,7 +9,7 @@ dotenv.config();
 
 
 
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT || 9000;
 
 
 const handleListening = () => {

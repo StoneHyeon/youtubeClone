@@ -3,13 +3,13 @@ youtubeClone web Site
 
 ## Pages
 
- - [ ] Home
+ - [x] Home
  - [x] Join
  - [x] Log In
  - [x] Search
- - [ ] User Detail
+ - [x] User Detail
  - [x] Edit Profile
  - [x] Change Password
  - [x] Upload
- - [ ] Video Detail
+ - [x] Video Detail
  - [x] Edit Video
